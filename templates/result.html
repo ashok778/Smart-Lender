@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<img src="{{ url_for('static', filename='logo.png') }}" width="100">
+
+<h1>🏦 Smart Lender</h1>
+<h3 style="color:white;">Loan Prediction Result</h3>
+
+<div class="result">
+
+{% if prediction == "Loan Approved" %}
+<h2 style="color:green;">✅ {{ prediction }}</h2>
+{% else %}
+<h2 style="color:red;">❌ {{ prediction }}</h2>
+{% endif %}
+
+<br>
+
+<a href="/">🔙 Predict Another Loan</a>
+
+</div>
+
+<br>
+
+<p style="color:white;">
+© 2026 Smart Lender | Developed by Ashok
+</p>
+
+</body>
+</html>

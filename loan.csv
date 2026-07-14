@@ -1,0 +1,11 @@
+Gender,Married,ApplicantIncome,LoanAmount,Credit_History,Loan_Status
+Male,Yes,5000,150,1,Y
+Male,No,3000,100,1,Y
+Female,Yes,4000,120,1,Y
+Female,No,1500,80,0,N
+Male,Yes,6000,180,1,Y
+Male,No,2000,90,0,N
+Female,Yes,3500,110,1,Y
+Male,Yes,2500,95,0,N
+Female,No,4500,130,1,Y
+Male,Yes,7000,200,1,Y

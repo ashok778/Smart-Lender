@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Lender - Loan Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<img src="{{ url_for('static', filename='logo.png') }}" alt="Bank Logo" width="100">
+
+<h1>🏦 Smart Lender</h1>
+<h3 style="color:white;">Loan Approval Prediction Using Machine Learning</h3>
+
+<form action="/predict" method="POST">
+
+<label><b>Gender</b></label><br>
+<select name="Gender">
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+</select>
+
+<br><br>
+
+<label><b>Married</b></label><br>
+<select name="Married">
+    <option value="Yes">Yes</option>
+    <option value="No">No</option>
+</select>
+
+<br><br>
+
+<label><b>Applicant Income</b></label><br>
+<input type="number" name="ApplicantIncome" placeholder="Enter Applicant Income" required>
+
+<br><br>
+
+<label><b>Loan Amount</b></label><br>
+<input type="number" name="LoanAmount" placeholder="Enter Loan Amount" required>
+
+<br><br>
+
+<label><b>Credit History</b></label><br>
+<select name="Credit_History">
+    <option value="1">Good</option>
+    <option value="0">Bad</option>
+</select>
+
+<br><br>
+
+<input type="submit" value="Predict Loan Status">
+
+</form>
+
+<br>
+
+<p style="color:white;">
+© 2026 Smart Lender | Developed by Ashok
+</p>
+
+</body>
+</html>
