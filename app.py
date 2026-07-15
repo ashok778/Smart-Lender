@@ -21,9 +21,9 @@ def predict():
     prediction = model.predict([[gender, married, income, loan, credit]])
 
     if prediction[0] == 1:
-        result = "✅ Loan Approved"
+        result = "Loan Approved"
     else:
-        result = "❌ Loan Rejected"
+        result = "Loan Rejected"
 
     return render_template("result.html", prediction=result)
 
